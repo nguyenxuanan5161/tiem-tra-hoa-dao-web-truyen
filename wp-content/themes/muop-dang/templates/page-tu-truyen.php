@@ -324,7 +324,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         $team_avatar = function_exists('muop_normalize_url') ? muop_normalize_url($team_avatar) : $team_avatar;
                         $team_bio = !empty($team_term->description) ? $team_term->description : get_term_meta($tid, '_team_bio', true);
                         if (empty($team_bio)) {
-                            $team_bio = 'Nhóm dịch nhiệt huyết tại Mướp Đắng Cũng Có Vị Ngọt.';
+                            $team_bio = 'Nhóm dịch nhiệt huyết tại Tiệm Trà Hoa Đào.';
                         }
                         $team_initial = mb_strtoupper(mb_substr($team_term->name, 0, 1, 'UTF-8'), 'UTF-8');
                         $team_link = get_term_link($team_term);
@@ -389,7 +389,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         $team_avatar = function_exists('muop_normalize_url') ? muop_normalize_url($team_avatar) : $team_avatar;
                         $team_bio = !empty($team_term->description) ? $team_term->description : get_term_meta($tid, '_team_bio', true);
                         if (empty($team_bio)) {
-                            $team_bio = 'Nhóm dịch nhiệt huyết tại Mướp Đắng Cũng Có Vị Ngọt.';
+                            $team_bio = 'Nhóm dịch nhiệt huyết tại Tiệm Trà Hoa Đào.';
                         }
                         $team_initial = mb_strtoupper(mb_substr($team_term->name, 0, 1, 'UTF-8'), 'UTF-8');
                         $team_link = get_term_link($team_term);
@@ -491,7 +491,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
                     <h3>Lịch sử đọc của bạn đang trống!</h3>
-                    <p>Khi bạn bắt đầu đọc bất kỳ chương truyện nào trên Mướp Đắng, hệ thống sẽ tự động lưu lại vị trí chương để bạn tiếp tục đọc bất cứ lúc nào.</p>
+                    <p>Khi bạn bắt đầu đọc bất kỳ chương truyện nào trên Tiệm Trà Hoa Đào, hệ thống sẽ tự động lưu lại vị trí chương để bạn tiếp tục đọc bất cứ lúc nào.</p>
                     <div class="empty-actions">
                         <a href="<?php echo esc_url(home_url('/truyen-hot/')); ?>" class="btn btn-primary">
                             <i class="fa-solid fa-fire"></i> Khám Phá Truyện Hot

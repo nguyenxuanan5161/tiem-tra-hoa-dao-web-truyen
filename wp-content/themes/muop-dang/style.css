@@ -1,39 +1,48 @@
-/*
-Theme Name: Mướp Đắng Cũng Có Vị Ngọt
-Theme URI: https://muopdangcungcovingot.io.vn/
+﻿/*
+Theme Name: Tiệm Trà Hoa Đào
+Theme URI: https://tiemtrahoadao.io.vn/
 Author: Antigravity
-Author URI: https://muopdangcungcovingot.io.vn/
-Description: Theme đọc truyện Zhihu mã nguồn mở tông màu xanh lá, xanh bơ, xanh mướp tươi mát. Tích hợp đầy đủ phân quyền Độc Giả, Dịch Giả, Quản Trị Viên (Admin), cổng đăng truyện cho dịch giả, tính lương 8đ/view, kiểm duyệt, gắn link Shopee & TikTok, thống kê click, và chống copy nội dung.
-Version: 2.5.0
+Author URI: https://tiemtrahoadao.io.vn/
+Description: Website đọc truyện và nghe audio Zhihu, ngôn tình, hiện đại chọn lọc với phong cách Tiệm Trà Hoa Đào & Hồng Pastel Nhật Bản dịu dàng, thơ mộng. Tích hợp đầy đủ phân quyền Độc Giả, Dịch Giả, Quản Trị Viên (Admin), cộng đồng truyện, tính lương nhuận bút theo lượt xem, chống copy nội dung và đặc biệt là hệ thống tự đọc truyện bằng giọng nói AI (Text-to-Speech) chuẩn tiếng Việt.
+Version: 3.5.0
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 8.0
-Text Domain: muop-dang
-Tags: novel, stories, zhihu, manga, custom-colors, green, responsive
+Text Domain: tiem-tra-hoa-dao
+Tags: novel, stories, zhihu, audio, tts, sakura, pastel-pink, japanese-cherry-blossom, responsive
 */
 
-/* Reset & Root Variables */
+/* Reset & Root Variables - Tông Tiệm Trà Hoa Đào & Hồng Pastel */
 :root {
-  --primary-green: #3F7523;
-  --primary-hover: #325E1C;
-  --avocado-green: #689F38;
-  --avocado-light: #8BC34A;
-  --luffa-green: #4E8732;
-  --soft-green: #E8F5E9;
-  --pastel-green: #F1F8E9;
-  --melon-accent: #7CB342;
+  --primary-color: #E87A90;        /* Sakura Rose - Hồng hoa đào Nhật Bản nở rộ */
+  --primary-hover: #D65D75;        /* Hồng dâu đậm khi hover */
+  --accent-gold: #F8A5B8;          /* Hồng phấn cánh hoa anh đào */
+  --accent-coral: #E06D85;         /* Hồng đào tươi tắn */
+  --accent-peach: #FBC4AB;         /* Cam hồng đào mọng ngọt ngào */
+  --tea-brown: #6B3E4E;            /* Nâu hoa mận trầm ấm thanh lịch */
+  --tea-warm: #8C4F66;             /* Hồng mận ấm áp */
   
-  --bg-body: #F4F8F3;
+  /* Backward-compatible alias mappings */
+  --primary-green: #E87A90;
+  --primary-hover: #D65D75;
+  --avocado-green: #F8A5B8;
+  --avocado-light: #FFCCD5;
+  --luffa-green: #D65D75;
+  --soft-green: #FFF0F3;           /* Hồng sữa dâu dịu dàng */
+  --pastel-green: #FFE3E8;         /* Hồng phấn pastel */
+  --melon-accent: #E06D85;
+  
+  --bg-body: #FFF7F9;              /* Nền trang hồng kem phấn nhẹ êm mắt */
   --bg-card: #FFFFFF;
-  --bg-card-hover: #FCFDFC;
-  --text-main: #1C2B18;
-  --text-muted: #556B4E;
-  --border-color: #D2E3CD;
-  --border-light: #E4EFE0;
+  --bg-card-hover: #FFF9FA;
+  --text-main: #3D222E;            /* Nâu thẫm ánh mận đậm đà, dễ đọc */
+  --text-muted: #8E6A78;           /* Màu cánh hoa khô thanh tao */
+  --border-color: #F8CCD8;         /* Viền hồng phấn tinh tế */
+  --border-light: #FDE8ED;
   
-  --shadow-sm: 0 2px 6px rgba(45, 85, 30, 0.06);
-  --shadow-md: 0 6px 18px rgba(45, 85, 30, 0.08);
-  --shadow-lg: 0 12px 30px rgba(45, 85, 30, 0.12);
+  --shadow-sm: 0 2px 8px rgba(232, 122, 144, 0.08);
+  --shadow-md: 0 6px 20px rgba(232, 122, 144, 0.12);
+  --shadow-lg: 0 12px 32px rgba(232, 122, 144, 0.18);
   
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -45,24 +54,33 @@ Tags: novel, stories, zhihu, manga, custom-colors, green, responsive
 }
 
 [data-theme="dark"] {
-  --primary-green: #6BB343;
-  --primary-hover: #81CA57;
-  --avocado-green: #7EBA45;
-  --avocado-light: #9BD961;
-  --luffa-green: #5E9E39;
-  --soft-green: #1F2B1B;
-  --pastel-green: #192416;
-  --melon-accent: #92CD52;
+  --primary-color: #F8A5B8;
+  --primary-hover: #FFCCD5;
+  --accent-gold: #FFCCD5;
+  --accent-coral: #F8A5B8;
+  --accent-peach: #FBC4AB;
+  --tea-brown: #E87A90;
+  --tea-warm: #F8A5B8;
   
-  --bg-body: #111810;
-  --bg-card: #182216;
-  --bg-card-hover: #1E2B1C;
-  --text-main: #E2ECE0;
-  --text-muted: #9BB098;
-  --border-color: #273724;
-  --border-light: #202D1E;
+  /* Backward-compatible alias mappings for dark mode */
+  --primary-green: #F8A5B8;
+  --primary-hover: #FFCCD5;
+  --avocado-green: #FFCCD5;
+  --avocado-light: #FFE3E8;
+  --luffa-green: #F8A5B8;
+  --soft-green: #2B1822;
+  --pastel-green: #22121A;
+  --melon-accent: #F8A5B8;
   
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.6);
+  --bg-body: #170E14;              /* Tím than trầm dạ nguyệt hoa anh đào */
+  --bg-card: #23161F;
+  --bg-card-hover: #2D1D28;
+  --text-main: #FDF2F4;
+  --text-muted: #C4A2B0;
+  --border-color: #442738;
+  --border-light: #331C29;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.7);
 }

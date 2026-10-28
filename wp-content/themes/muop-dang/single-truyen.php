@@ -16,7 +16,7 @@ if (empty($team)) {
     $team = (!empty($team_terms) && !is_wp_error($team_terms)) ? $team_terms[0]->name : get_post_meta($story_id, '_truyen_dich_gia', true);
 }
 if (empty($team)) {
-    $team = 'Mướp Đắng Cũng Có Vị Ngọt';
+    $team = 'Tiệm Trà Hoa Đào';
 }
 $updated_data = muop_get_story_last_updated($story_id);
 $updated      = $updated_data['display'];
@@ -361,7 +361,7 @@ if (empty($from) && isset($_SERVER['HTTP_REFERER'])) {
                     if (!empty($content)) {
                         echo muop_format_story_summary($content);
                     } else {
-                        echo '<p>Câu chuyện tình yêu đầy cảm xúc được dịch và biên tập cẩn thận bởi team Mướp Đắng. Chúc các độc giả có những phút giây thư giãn ngọt ngào nhất!</p>';
+                        echo '<p>Câu chuyện tình yêu đầy cảm xúc được dịch và biên tập cẩn thận bởi team Tiệm Trà Hoa Đào. Chúc các độc giả có những phút giây thư giãn ngọt ngào nhất!</p>';
                     }
                     ?>
                 </div>

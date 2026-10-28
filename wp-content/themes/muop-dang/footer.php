@@ -1,6 +1,6 @@
 <?php
 /**
- * Footer Template for Mướp Đắng Cũng Có Vị Ngọt
+ * Footer Template for Tiệm Trà Hoa Đào
  */
 if (!defined('ABSPATH')) exit;
 ?>
@@ -12,18 +12,22 @@ if (!defined('ABSPATH')) exit;
         <div class="footer-content">
             <div class="footer-brand">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-wrapper footer-brand-wrapper" title="<?php bloginfo('name'); ?>">
+                    <div class="brand-logo brand-avatar" style="width: 52px; height: 52px;">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png?v=4.0'); ?>" alt="Logo Tiệm Trà Hoa Đào" class="brand-icon-img" />
+                    </div>
                     <div class="brand-text">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-text.png?v=' . (defined('MUOP_THEME_VERSION') ? MUOP_THEME_VERSION : '2.5.0')); ?>" alt="<?php bloginfo('name'); ?>" class="footer-logo-img" />
+                        <span class="brand-title-styled" style="font-size: 21px;">TIỆM TRÀ HOA ĐÀO</span>
+                        <span class="brand-slogan-styled" style="font-size: 9.5px;">Góc Truyện & Audio Ngọt Ngào</span>
                     </div>
                 </a>
                 <p class="footer-slogan">
-                    Mướp Đắng Cũng Có Vị Ngọt – nơi tâm hồn bạn được thả lỏng cùng với những câu truyện mà Mướp mang đến cho bạn.
+                    Tiệm Trà Hoa Đào – nơi thưởng trà và thả mình theo những câu chuyện ngôn tình ngọt ngào, sâu lắng cùng tính năng nghe audio đọc truyện thư thái.
                 </p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>Copyright © 2026 Mướp Đắng Cũng Có Vị Ngọt. All right reserved.</p>
+            <p>Copyright © 2026 Tiệm Trà Hoa Đào. All right reserved.</p>
         </div>
     </div>
 </footer>
@@ -68,7 +72,7 @@ if (!defined('ABSPATH')) exit;
         <h3 class="shopee-modal-title">Ủng Hộ Mướp Đắng Nhé! 🌱</h3>
         
         <div class="shopee-modal-msg">
-            <p style="margin-bottom: 8px;"><strong>Để giúp Mướp có thể duy trì web lâu dài mọi người click vào link này nha.</strong></p>
+            <p style="margin-bottom: 8px;"><strong>Để giúp Tiệm Trà Hoa Đào có thể duy trì web lâu dài mọi người click vào link này nha.</strong></p>
             <p style="font-size: 13px; color: var(--text-muted); margin: 0;">Bạn cần nhấn mở link Shopee dưới đây để hệ thống tự động mở khóa chương truyện này cho bạn đọc tiếp nhé!</p>
         </div>
 

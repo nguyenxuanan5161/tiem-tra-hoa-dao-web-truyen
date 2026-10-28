@@ -225,7 +225,7 @@ $shopee_url     = get_option('muop_shopee_url', 'https://s.shopee.vn/4qG9lQO2rp'
                     <form id="formPostComment">
                         <input type="hidden" name="post_id" value="<?php echo $chapter_id; ?>" />
                         <div class="comment-input-wrap">
-                            <textarea name="comment" class="comment-textarea" placeholder="Nội dung chương này thế nào, chia sẻ cùng Mướp nha..." required></textarea>
+                            <textarea name="comment" class="comment-textarea" placeholder="Nội dung chương này thế nào, chia sẻ cùng Tiệm Trà Hoa Đào nha..." required></textarea>
                             <div class="comment-stickers-preview" style="display: none;"></div>
                         </div>
                         <div class="comment-form-toolbar">

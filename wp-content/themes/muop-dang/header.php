@@ -1,6 +1,6 @@
 <?php
 /**
- * Header Template for Mướp Đắng Cũng Có Vị Ngọt
+ * Header Template for Tiệm Trà Hoa Đào
  */
 if (!defined('ABSPATH')) exit;
 
@@ -356,10 +356,16 @@ if ($genres === false) {
             <!-- Logo & Web Name -->
             <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-wrapper" title="<?php bloginfo('name'); ?>">
                 <div class="brand-logo brand-avatar">
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png'); ?>" alt="Logo Mướp Đắng" class="brand-icon-img" />
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png?v=4.0'); ?>" 
+                         srcset="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon-128.png?v=4.0'); ?> 1x, <?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png?v=4.0'); ?> 2x" 
+                         alt="Logo Tiệm Trà Hoa Đào" 
+                         class="brand-icon-img" 
+                         width="52" 
+                         height="52" />
                 </div>
                 <div class="brand-text">
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-text.png?v=' . (defined('MUOP_THEME_VERSION') ? MUOP_THEME_VERSION : '2.5.0')); ?>" alt="<?php bloginfo('name'); ?>" class="brand-title-img" />
+                    <span class="brand-title-styled">TIỆM TRÀ HOA ĐÀO</span>
+                    <span class="brand-slogan-styled">Góc Truyện & Audio Ngọt Ngào</span>
                     <h1 class="sr-only"><?php bloginfo('name'); ?></h1>
                 </div>
             </a>
@@ -637,11 +643,12 @@ if ($genres === false) {
 <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
     <div class="drawer-header">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="drawer-brand" title="<?php bloginfo('name'); ?>">
-            <div class="brand-logo brand-avatar" style="width: 36px; height: 36px;">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png'); ?>" alt="Logo Mướp Đắng" class="brand-icon-img" />
+            <div class="brand-logo brand-avatar" style="width: 44px; height: 44px;">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png?v=4.0'); ?>" alt="Logo Tiệm Trà Hoa Đào" class="brand-icon-img" />
             </div>
             <div class="brand-text">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-text.png?v=' . (defined('MUOP_THEME_VERSION') ? MUOP_THEME_VERSION : '2.5.0')); ?>" alt="<?php bloginfo('name'); ?>" class="brand-title-img" style="height: 32px;" />
+                <span class="brand-title-styled" style="font-size: 16px;">TIỆM TRÀ HOA ĐÀO</span>
+                <span class="brand-slogan-styled" style="font-size: 8.5px;">Góc Truyện & Audio Ngọt Ngào</span>
             </div>
         </a>
         <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Đóng menu">

@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('MUOP_THEME_VERSION')) {
-    define('MUOP_THEME_VERSION', '2.5.0');
+    define('MUOP_THEME_VERSION', '4.0.0');
 }
 if (!defined('MUOP_THEME_DIR')) {
     define('MUOP_THEME_DIR', __DIR__);
@@ -1483,6 +1483,12 @@ function muop_is_story_of_team_muop_dang($story_id) {
     }
     
     $norm = mb_strtolower(trim($team), 'UTF-8');
+    if (strpos($norm, 'tiệm trà') !== false || strpos($norm, 'tiem tra') !== false || strpos($norm, 'hoa đào') !== false) {
+        return true;
+    }
+    if (strpos($norm, 'tiệm trà') !== false || strpos($norm, 'tiem tra') !== false || strpos($norm, 'hoa đào') !== false) {
+        return true;
+    }
     if ($norm === 'mướp đắng cũng có vị ngọt' || 
         $norm === 'muop dang cung co vi ngot' ||
         $norm === 'mướp đắng' || 
@@ -2249,7 +2255,7 @@ function muop_ajax_submit_story_handler() {
     $is_admin = muop_is_admin();
     if ($is_admin) {
         // Admin luôn đăng dưới danh xưng team Mướp Đắng Cũng Có Vị Ngọt
-        $team_name = 'Mướp Đắng Cũng Có Vị Ngọt';
+        $team_name = 'Tiệm Trà Hoa Đào';
     }
 
     $post_date = current_time('mysql');
@@ -7021,7 +7027,7 @@ add_action('init', function() {
             status_header(403);
             header('Content-Type: text/plain; charset=utf-8');
             header('X-Robots-Tag: noindex, nofollow');
-            exit('Access Denied: Missing User-Agent header. [Anti-Crawl Protection by Muop Dang]');
+            exit('Access Denied: Missing User-Agent header. [Anti-Crawl Protection by Tiệm Trà Hoa Đào]');
         }
         return;
     }
@@ -7091,7 +7097,7 @@ add_action('init', function() {
             status_header(403);
             header('Content-Type: text/plain; charset=utf-8');
             header('X-Robots-Tag: noindex, nofollow');
-            exit("Access Denied: Automated scraping tools are strictly prohibited. [Anti-Crawl Protection by Muop Dang]");
+            exit("Access Denied: Automated scraping tools are strictly prohibited. [Anti-Crawl Protection by Tiệm Trà Hoa Đào]");
         }
     }
 }, 1);
@@ -7135,7 +7141,7 @@ remove_action('xmlrpc_rsd_apis', 'rest_output_rsd');
 function muop_disable_all_rss_feeds() {
     status_header(403);
     wp_die(
-        __('Kênh RSS đã bị vô hiệu hóa để bảo vệ bản quyền tác phẩm. Mời bạn đọc truyện trực tiếp tại website Mướp Đắng!', 'muop-dang'),
+        __('Kênh RSS đã bị vô hiệu hóa để bảo vệ bản quyền tác phẩm. Mời bạn đọc truyện trực tiếp tại website Tiệm Trà Hoa Đào!', 'muop-dang'),
         __('RSS Feed Disabled', 'muop-dang'),
         array('response' => 403)
     );
@@ -7154,7 +7160,7 @@ remove_action('wp_head', 'feed_links_extra', 3);
  * 4. Bổ sung cấu hình robots.txt chặn các bot cào dữ liệu và các đường dẫn feed/API
  */
 add_filter('robots_txt', function($output, $public) {
-    $custom = "\n# [Bảo vệ bản quyền] Quy tắc chặn Crawler & Bot của Mướp Đắng\n";
+    $custom = "\n# [Bảo vệ bản quyền] Quy tắc chặn Crawler & Bot của Tiệm Trà Hoa Đào\n";
     $custom .= "User-agent: *\n";
     $custom .= "Disallow: /wp-json/\n";
     $custom .= "Disallow: /feed/\n";
@@ -7199,7 +7205,7 @@ add_filter('the_content', function($content) {
         return $content;
     }
 
-    $watermark = '<span class="muop-copy-decoy" aria-hidden="true" style="display:none!important;font-size:0!important;height:0!important;width:0!important;opacity:0!important;position:absolute!important;left:-9999px!important;user-select:none!important;">[Nội dung được bảo hộ độc quyền tại website Mướp Đắng - muopdang.com]</span>';
+    $watermark = '<span class="muop-copy-decoy" aria-hidden="true" style="display:none!important;font-size:0!important;height:0!important;width:0!important;opacity:0!important;position:absolute!important;left:-9999px!important;user-select:none!important;">[Nội dung được bảo hộ độc quyền tại website Tiệm Trà Hoa Đào - tiemtrahoadao.io.vn]</span>';
 
     // Chèn watermark vào sau các thẻ </p> cách quãng để đánh dấu bản quyền
     $paragraphs = explode('</p>', $content);
@@ -7512,3 +7518,16 @@ function muop_ajax_delete_splitter_history_handler() {
 
 
 
+
+// ==========================================================================
+// TIỆM TRÀ HOA ĐÀO - DYNAMIC SITE BRANDING FILTERS
+// ==========================================================================
+function tiem_tra_hoa_dao_brand_filters() {
+    add_filter('pre_option_blogname', function() {
+        return 'Tiệm Trà Hoa Đào';
+    }, 999);
+    add_filter('pre_option_blogdescription', function() {
+        return 'Góc Truyện & Audio Ngọt Ngào';
+    }, 999);
+}
+add_action('after_setup_theme', 'tiem_tra_hoa_dao_brand_filters');

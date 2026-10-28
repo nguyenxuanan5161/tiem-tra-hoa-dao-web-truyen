@@ -174,7 +174,7 @@ if (is_user_logged_in() && $team_id > 0) {
     $curr_user = wp_get_current_user();
     $norm_team = mb_strtolower(trim($team_name), 'UTF-8');
     if (muop_is_admin($current_uid)) {
-        if (strpos($norm_team, 'mướp đắng') !== false || strpos($norm_team, 'muop dang') !== false) {
+        if (strpos($norm_team, 'tiệm trà') !== false || strpos($norm_team, 'tiem tra') !== false || strpos($norm_team, 'mướp đắng') !== false || strpos($norm_team, 'muop dang') !== false) {
             $can_edit_team = true;
         } else {
             foreach ($all_team_stories as $st) {

@@ -12,8 +12,8 @@ get_header();
     <!-- Welcome / Hero Banner -->
     <div class="welcome-banner">
         <div class="banner-content">
-            <h2>Chào Mừng Đến Với Mướp Đắng Cũng Có Vị Ngọt <i class="fa-solid fa-seedling" style="color: var(--avocado-green);"></i></h2>
-            <p>Một góc nhỏ dành cho những ai đam mê đọc truyện, đến rồi hãy ở lại ghé thăm góc nhỏ này của Mướp nha, chúc các bạn đọc truyện vui vẻ.</p>
+            <h2>Chào Mừng Đến Với Tiệm Trà Hoa Đào <i class="fa-solid fa-mug-hot" style="color: var(--primary-color);"></i></h2>
+            <p>Một góc nhỏ dành cho những ai đam mê đọc truyện, đến rồi hãy ở lại ghé thăm Tiệm Trà Hoa Đào nha, chúc các bạn đọc truyện và nghe audio thư thái!</p>
         </div>
         <div class="banner-actions">
             <a href="<?php echo esc_url(home_url('/truyen-hot/')); ?>" class="btn btn-primary">
