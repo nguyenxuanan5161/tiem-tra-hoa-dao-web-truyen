@@ -49,3 +49,4 @@ let func = fs.readFileSync(funcPath, 'utf8').replace(/\r\n/g, '\n');
 func = func.replace(/define\('MUOP_THEME_VERSION',\s*'[^']+'\);/, `define('MUOP_THEME_VERSION', '4.0.2');`);
 fs.writeFileSync(funcPath, func.replace(/\n/g, '\r\n'), 'utf8');
 console.log('Bumped theme version to 4.0.2 in functions.php');
+
