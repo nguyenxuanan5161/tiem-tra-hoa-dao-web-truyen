@@ -64,3 +64,4 @@ console.log('Successfully generated database.sql! File size:', fs.statSync(dstPa
 // Verify sanity
 const termsLine = sql.split(/\r?\n/).find(l => l.includes("INSERT INTO `wp_terms`"));
 console.log('wp_terms sample:', termsLine ? termsLine.substring(0, 160) : 'NOT FOUND');
+
