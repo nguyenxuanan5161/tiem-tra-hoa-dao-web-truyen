@@ -1,6 +1,6 @@
 # 📖 HƯỚNG DẪN CÀI ĐẶT & CHẠY WEB TRUYỆN TỪ A ĐẾN Z
 ### Dành cho cả Máy Tính (PC / Laptop) và Điện Thoại (iOS / Android)
-**Dự án:** Website Đọc Truyện Zhihu — *Mướp Đắng Cũng Có Vị Ngọt*
+**Dự án:** Website Đọc Truyện Zhihu — *Tiệm Trà Hoa Đào*
 
 ---
 
@@ -161,13 +161,14 @@ Chọn 1 trong 2 cách sau:
 
 ## 7. DANH SÁCH TÀI KHOẢN MẪU ĐỂ TRẢI NGHIỆM
 
-Hệ thống đã có sẵn các tài khoản demo tương ứng với 3 vai trò khác nhau trong hệ thống:
+Hệ thống đã có sẵn các tài khoản demo tương ứng với 3 vai trò khác nhau trong hệ thống (Tất cả dùng chung mật khẩu: `MatKhau@123`):
 
-| Vai trò | Tên đăng nhập | Mật khẩu | Chức năng nổi bật |
-| :--- | :--- | :--- | :--- |
-| **Quản trị viên (Admin)** | `admin` | `Ngockha2405` | Toàn quyền quản trị website, duyệt truyện của dịch giả, quản lý link Shopee/TikTok affiliate, xem bảng lương, quản lý người dùng, chuyển đổi chế độ xem. |
-| **Dịch giả (Translator)** | `dichgia_muop` | `dichgia123` | Đăng truyện mới, thêm chương, quét kiểm duyệt từ nhạy cảm tự động, xem thống kê lượt đọc, theo dõi tiền nhuận bút (8đ / view). |
-| **Độc giả (Reader)** | `docgia_linh` | `docgia123` | Đọc truyện, đánh dấu chương đã đọc, lưu vào tủ truyện yêu thích, đổi chế độ giao diện Sáng/Tối (Light/Dark mode), bình luận truyện. |
+| Vai trò | Tên đăng nhập | Email | Mật khẩu | Chức năng nổi bật |
+| :--- | :--- | :--- | :--- | :--- |
+| **Quản trị viên (Admin)** | `admin` | `admin@tiemtrahoadao.vn` | `MatKhau@123` | Toàn quyền quản trị website, duyệt truyện của dịch giả, quản lý link Shopee/TikTok affiliate, xem bảng lương, quản lý người dùng, chuyển đổi chế độ xem. |
+| **Quản trị viên dự phòng** | `ngockha24052001` | `ngockha24052001@gmail.com` | `MatKhau@123` | Toàn quyền quản trị hệ thống. |
+| **Dịch giả (Translator)** | `dichgia_muop` | `dichgia@tiemtrahoadao.vn` | `MatKhau@123` | Đăng truyện mới, thêm chương, quét kiểm duyệt từ nhạy cảm tự động, xem thống kê lượt đọc, theo dõi tiền nhuận bút (8đ / view). |
+| **Độc giả (Reader)** | `docgia_linh` | `docgia@tiemtrahoadao.vn` | `MatKhau@123` | Đọc truyện, đánh dấu chương đã đọc, lưu vào tủ truyện yêu thích, đổi chế độ giao diện Sáng/Tối (Light/Dark mode), bình luận truyện. |
 
 > Đường dẫn đăng nhập nhanh: [http://localhost:8080/dang-nhap/](http://localhost:8080/dang-nhap/)
 
@@ -216,4 +217,4 @@ Hệ thống đã có sẵn các tài khoản demo tương ứng với 3 vai tr�
 
 ---
 
-**Chúc bạn cài đặt và trải nghiệm website "Mướp Đắng Cũng Có Vị Ngọt" thật tuyệt vời! 🥒✨**
+**Chúc bạn cài đặt và trải nghiệm website "Tiệm Trà Hoa Đào" thật tuyệt vời! 🥒✨**

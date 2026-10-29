@@ -1,13 +1,13 @@
-# 🥒 MƯỚP ĐẮNG CŨNG CÓ VỊ NGỌT — WEBSITE ĐỌC TRUYỆN ZHIHU
+# 🌸 TIỆM TRÀ HOA ĐÀO — GÓC TRUYỆN & AUDIO NGỌT NGÀO
 
 Website đọc truyện Zhihu, ngôn tình, hiện đại, cổ trang được xây dựng hoàn chỉnh trên nền tảng **WordPress mã nguồn mở (PHP 8.2 + MySQL)**. 
 ---
 
 ## 🚀 TRUY CẬP WEBSITE
 
-- **Tên miền chính thức:** [https://muopdangcungcovingot.io.vn/](https://muopdangcungcovingot.io.vn/)
-- **Đăng nhập:** [https://muopdangcungcovingot.io.vn/dang-nhap/](https://muopdangcungcovingot.io.vn/dang-nhap/)
-- **Đăng ký:** [https://muopdangcungcovingot.io.vn/dang-ky/](https://muopdangcungcovingot.io.vn/dang-ky/)
+- **Địa chỉ máy chủ (VPS):** [http://162.4.176.220/](http://162.4.176.220/)
+- **Đăng nhập:** [http://162.4.176.220/dang-nhap/](http://162.4.176.220/dang-nhap/)
+- **Đăng ký:** [http://162.4.176.220/dang-ky/](http://162.4.176.220/dang-ky/)
 - **Chạy môi trường cục bộ (Local):** [http://localhost:8080/](http://localhost:8080/) (Chạy file `run.bat` trong thư mục gốc)
 - **📖 Hướng dẫn chi tiết cài đặt & chạy web (PC & Mobile từ A-Z):** [HUONG_DAN_CAI_DAT_VA_CHAY_WEB.md](HUONG_DAN_CAI_DAT_VA_CHAY_WEB.md)
 
@@ -15,16 +15,16 @@ Website đọc truyện Zhihu, ngôn tình, hiện đại, cổ trang được x
 
 ## 👥 TÀI KHOẢN MẪU & PHÂN QUYỀN HỆ THỐNG
 
-| Vai trò | Tên đăng nhập | Mật khẩu | Chức năng nổi bật |
-| :--- | :--- | :--- | :--- |
-| **Quản trị viên (Admin)** | `admin` | `Ngockha2405` | Toàn quyền quản trị, kiểm duyệt truyện, gắn link Shopee/TikTok, xem click, quản lý người dùng, xem lương dịch giả, đổi chế độ xem. |
-| **Quản trị viên 2** | `ngockha24052001` | `Ngockha2405` | Toàn quyền quản trị hệ thống. |
-| **Quản trị viên 3** | `comotkhonghai59` | `Ngockha2405` | Toàn quyền quản trị hệ thống. |
-| **Dịch giả 1 (Translator)** | `dichgia_muop` | `dichgia123` | Đăng truyện, thêm chương, quản lý truyện đã đăng, xem view ngày/tuần/tháng/năm, xem nhuận bút 8đ/view, trả lời bình luận. |
-| **Dịch giả 2 (Translator)** | `dichgia_bocute` | `dichgia123` | Đăng truyện, thêm chương, tính lương, quản lý tác phẩm. |
-| **Dịch giả 3 (Translator)** | `test_dichgia` | `dichgia123` | Kiểm thử tài khoản dịch giả. |
-| **Độc giả 1 (Reader)** | `docgia_linh` | `docgia123` | Đọc truyện, lưu tủ truyện, lịch sử đọc, bình luận, bật/tắt giao diện Sáng/Tối. |
-| **Độc giả 2 (Reader)** | `docgia_minh` | `docgia123` | Đọc truyện, tủ truyện cá nhân. |
+> **Lưu ý:** Tất cả các tài khoản demo đã được cài đặt mật khẩu đồng bộ: `MatKhau@123`
+
+| Vai trò | Tên đăng nhập | Email | Mật khẩu | Chức năng nổi bật |
+| :--- | :--- | :--- | :--- | :--- |
+| **Quản trị viên (Admin)** | `admin` | `admin@tiemtrahoadao.vn` | `MatKhau@123` | Toàn quyền quản trị, kiểm duyệt truyện, gắn link Shopee/TikTok, xem click, quản lý người dùng, xem lương dịch giả, đổi chế độ xem. |
+| **Quản trị viên dự phòng** | `ngockha24052001` | `ngockha24052001@gmail.com` | `MatKhau@123` | Toàn quyền quản trị hệ thống. |
+| **Dịch giả 1 (Translator)** | `dichgia_muop` | `dichgia@tiemtrahoadao.vn` | `MatKhau@123` | Đăng truyện, thêm chương, quản lý truyện đã đăng, xem view ngày/tuần/tháng/năm, xem nhuận bút 8đ/view, trả lời bình luận. |
+| **Dịch giả 2 (Translator)** | `dichgia_bocute` | `bo@tiemtrahoadao.vn` | `MatKhau@123` | Đăng truyện, thêm chương, tính lương, quản lý tác phẩm. |
+| **Độc giả 1 (Reader)** | `docgia_linh` | `docgia@tiemtrahoadao.vn` | `MatKhau@123` | Đọc truyện, lưu tủ truyện, lịch sử đọc, bình luận, bật/tắt giao diện Sáng/Tối. |
+| **Độc giả 2 (Reader)** | `docgia_minh` | `minh@tiemtrahoadao.vn` | `MatKhau@123` | Đọc truyện, tủ truyện cá nhân. |
 
 ---
 
@@ -33,7 +33,7 @@ Website đọc truyện Zhihu, ngôn tình, hiện đại, cổ trang được x
 ### 1. Giao Diện & Trải Nghiệm (Front-End)
 - **Header 1 (Cố định):**
   - Logo thương hiệu hình lá mầm xanh mát mắt
-  - Tên website: **Mướp Đắng Cũng Có Vị Ngọt**
+  - Tên website: **Tiệm Trà Hoa Đào**
   - Khung tìm kiếm truyện, tác giả, dịch giả tức thời (giới hạn chuẩn xác `post_type=truyen`)
   - Icon chuyển đổi chế độ **Sáng / Tối (Dark / Light Mode)** lưu tùy chọn người dùng
   - Khung Đăng nhập / Đăng ký hoặc Dropdown hồ sơ cá nhân khi đã đăng nhập
@@ -52,8 +52,8 @@ Website đọc truyện Zhihu, ngôn tình, hiện đại, cổ trang được x
   - **Mục Truyện hot:** Hiển thị 12 truyện có lượt xem cao nhất
   - **Mục Truyện Full:** Hiển thị 12 truyện đã hoàn thành
 - **Footer (Cố định):**
-  - Logo, tên web, slogan: *"Mướp Đắng Cũng Có Vị Ngọt – nơi tâm hồn bạn được thả lỏng cùng với những câu truyện mà Mướp mang đến cho bạn"*
-  - Bản quyền: `Copyright © 2026 Mướp Đắng Cũng Có Vị Ngọt. All right reserved.`
+  - Logo, tên web, slogan: *"Tiệm Trà Hoa Đào – nơi tâm hồn bạn được thả lỏng cùng với những câu truyện mà Mướp mang đến cho bạn"*
+  - Bản quyền: `Copyright © 2026 Tiệm Trà Hoa Đào. All right reserved.`
 - **Cơ chế Đăng xuất Nhanh (Direct Logout):**
   - Bỏ qua hoàn toàn màn hình xác nhận rườm rà mặc định của WordPress, tự động đăng xuất và chuyển hướng tức thì về trang chủ.
 

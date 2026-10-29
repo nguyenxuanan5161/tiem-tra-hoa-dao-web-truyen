@@ -461,7 +461,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     ?>
                         <div class="tu-history-item" id="tuHistoryItem-<?php echo $story->ID; ?>">
                             <a href="<?php echo esc_url(get_permalink($story)); ?>" class="history-item-thumb">
-                                <img src="<?php echo esc_url($story_thumb); ?>" alt="<?php echo esc_attr($story->post_title); ?>" />
+                                <img src="<?php echo esc_url($story_thumb); ?>" alt="<?php echo esc_attr($story->post_title); ?>" onerror="this.onerror=null;this.src='<?php echo esc_url(MUOP_THEME_URI . '/assets/images/default-cover.svg'); ?>';" />
                             </a>
                             <div class="history-item-body">
                                 <h3 class="history-item-title">

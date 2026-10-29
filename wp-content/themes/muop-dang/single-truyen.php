@@ -178,7 +178,7 @@ if (empty($from) && isset($_SERVER['HTTP_REFERER'])) {
             <!-- Left: Hình ảnh truyện -->
             <div class="story-cover-col">
                 <div class="story-cover-frame" id="storyCoverFrame">
-                    <img id="mainStoryCoverImg" src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>" />
+                    <img id="mainStoryCoverImg" src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>" onerror="this.onerror=null;this.src='<?php echo esc_url(MUOP_THEME_URI . '/assets/images/default-cover.svg'); ?>';" />
                     <?php if ($can_manage_story) : ?>
                         <button type="button" class="btn-change-cover-overlay" id="btnChangeCoverOverlay" data-story-id="<?php echo $story_id; ?>" title="Thay đổi ảnh bìa truyện (Dịch giả)">
                             <i class="fa-solid fa-camera"></i>

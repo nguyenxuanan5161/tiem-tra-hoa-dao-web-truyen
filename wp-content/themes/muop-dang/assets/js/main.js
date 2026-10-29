@@ -6949,7 +6949,7 @@
 
             if (res && res.success && res.data) {
               const d = res.data;
-              $('#prevStoryCover').attr('src', d.thumbnail || '/wp-content/themes/muop-dang/assets/images/default-cover.jpg');
+              $('#prevStoryCover').attr('src', d.thumbnail || '/wp-content/themes/muop-dang/assets/images/default-cover.svg');
               $('#prevStoryTitle').text(d.title || 'Không có tiêu đề');
               $('#prevStoryTeam').text(d.team_name || 'Cá nhân');
               $('#prevStoryGenres').text(d.genres || 'Đang cập nhật');

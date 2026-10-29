@@ -47,7 +47,7 @@ if (!$thumb_url) {
 <div class="story-card">
     <div class="story-cover-wrap">
         <a href="<?php the_permalink(); ?>">
-            <img class="story-cover-img" src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" />
+            <img class="story-cover-img" src="<?php echo esc_url($thumb_url); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" onerror="this.onerror=null;this.src='<?php echo esc_url(MUOP_THEME_URI . '/assets/images/default-cover.svg'); ?>';" />
         </a>
 
         <!-- Badges: Full (Đỏ) nếu đã hoàn thành, Mới (Hồng) nếu mới đăng trong vòng 24h -->

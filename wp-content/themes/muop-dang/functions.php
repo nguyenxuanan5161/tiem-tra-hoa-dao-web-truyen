@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('MUOP_THEME_VERSION')) {
-    define('MUOP_THEME_VERSION', '4.0.2');
+    define('MUOP_THEME_VERSION', '4.0.3');
 }
 if (!defined('MUOP_THEME_DIR')) {
     define('MUOP_THEME_DIR', __DIR__);
@@ -3895,7 +3895,7 @@ function muop_ajax_get_genre_stories_handler() {
         while ($query->have_posts()) {
             $query->the_post();
             $story_id = get_the_ID();
-            $thumb = get_the_post_thumbnail_url($story_id, 'thumbnail') ?: (get_template_directory_uri() . '/assets/images/placeholder-book.png');
+            $thumb = get_the_post_thumbnail_url($story_id, 'thumbnail') ?: (get_template_directory_uri() . '/assets/images/default-cover.svg');
             $status_meta = get_post_meta($story_id, '_truyen_status', true);
             $views = (int) get_post_meta($story_id, '_muop_views_total', true);
             $chap_count = (int) get_post_meta($story_id, '_muop_chapter_count', true);

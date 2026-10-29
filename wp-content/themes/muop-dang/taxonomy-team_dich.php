@@ -373,7 +373,7 @@ if (is_user_logged_in() && $team_id > 0) {
 
                                 <div class="team-spotlight-content">
                                     <a href="<?php echo esc_url(get_permalink($item_id)); ?>" class="team-spotlight-thumb">
-                                        <img src="<?php echo esc_url($item_thumb_url); ?>" alt="<?php echo esc_attr(get_the_title($item_id)); ?>" />
+                                        <img src="<?php echo esc_url($item_thumb_url); ?>" alt="<?php echo esc_attr(get_the_title($item_id)); ?>" onerror="this.onerror=null;this.src='<?php echo esc_url(MUOP_THEME_URI . '/assets/images/default-cover.svg'); ?>';" />
                                     </a>
                                     <div class="team-spotlight-details">
                                         <h2 class="team-spotlight-title">
