@@ -12089,15 +12089,15 @@ html[data-theme="dark"] .story-carousel-dot.is-active {
 }
 
 @media (max-width: 768px) {
+  /* Giao diện mobile: chỉ hiện logo avatar tròn Tiệm Trà Hoa Đào, ẩn phần chữ trên header top để tránh chèn ép nút */
+  .header-top .brand-wrapper .brand-text {
+    display: none !important;
+  }
+  .header-top .brand-wrapper {
+    gap: 0 !important;
+  }
   .brand-logo.brand-avatar {
-    width: 40px !important;
-    height: 40px !important;
-  }
-  .brand-title-styled {
-    font-size: 16px !important;
-  }
-  .brand-slogan-styled {
-    font-size: 8px !important;
-    letter-spacing: 0.8px !important;
+    width: 42px !important;
+    height: 42px !important;
   }
 }

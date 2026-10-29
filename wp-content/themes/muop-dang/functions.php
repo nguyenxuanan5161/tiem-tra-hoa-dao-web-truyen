@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('MUOP_THEME_VERSION')) {
-    define('MUOP_THEME_VERSION', '4.0.0');
+    define('MUOP_THEME_VERSION', '4.0.2');
 }
 if (!defined('MUOP_THEME_DIR')) {
     define('MUOP_THEME_DIR', __DIR__);
