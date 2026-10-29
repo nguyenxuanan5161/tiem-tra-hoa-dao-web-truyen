@@ -42,3 +42,4 @@ hd = hd.replace(/Mướp Đắng Cũng Có Vị Ngọt/g, 'Tiệm Trà Hoa Đào
 
 fs.writeFileSync(hdPath, hd, 'utf8');
 console.log('HUONG_DAN_CAI_DAT_VA_CHAY_WEB.md updated successfully!');
+
